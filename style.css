@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* width  */
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+  font-size: 3rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  color: black;
+  font-size: 3rem;
+}
+
+.game {
+  /* width: 70vw; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* height: 40vh; */
+  /* position: relative; */
+  padding: 4rem;
+}
+
+.words {
+  /* border: none; */
+  width: 100rem;
+  font-size: 4.6rem;
+  line-height: 1.5;
+  /* z-index: -2; */
+  color: #666;
+  /* position: absolute; */
+}
+
+.word {
+  display: inline-block;
+  padding-right: 1rem;
+}
