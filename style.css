@@ -9,14 +9,14 @@ html {
 }
 
 body {
-  /* width  */
   justify-content: center;
   align-items: center;
   font-size: 1.6rem;
+  padding: 3rem;
 }
 
 .content {
-  width: 100%;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -29,34 +29,33 @@ body {
   justify-items: center;
   align-items: center;
   /* justify-content: space-between; */
-  padding: 4rem;
-  font-size: 3rem;
+  padding: 1rem;
+  font-size: 2.4rem;
 }
 
 .btn {
   padding: 1rem 2rem;
   color: black;
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 
 .game {
   /* width: 70vw; */
-  width: 100%;
+  align-self: center;
+  padding: 2rem;
+  width: 70%;
+  height: 45vh;
   display: flex;
   justify-content: center;
-  /* height: 40vh; */
-  /* position: relative; */
-  padding: 4rem;
+  background-color: antiquewhite;
+  overflow: scroll;
 }
 
 .words {
-  /* border: none; */
-  width: 100rem;
-  font-size: 4.6rem;
+  height: fit-content;
+  font-size: 2.4rem;
   line-height: 1.5;
-  /* z-index: -2; */
   color: #666;
-  /* position: absolute; */
 }
 
 .word {
@@ -64,17 +63,13 @@ body {
   padding-right: 2rem;
 }
 
-.game {
-  overflow: hidden;
-}
-
 .num {
-  font-size: 4.6rem;
+  font-size: 2.4rem;
   padding: 1rem;
   border: 1rem solid black;
   border-radius: 50%;
-  width: 15rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
   text-align: center;
   background-color: #a1171769;
 }
@@ -83,7 +78,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .btn {
