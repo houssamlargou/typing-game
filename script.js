@@ -11,14 +11,10 @@ function randomWords() {
   return wordsSplit[randomIndex];
 }
 
-console.log(littersHandler(randomWords().split("")));
-
 function littersHandler(litters) {
   let letter = "";
-  console.log(litters);
-  console.log(litters.length);
   for (let i = 0; i < litters.length; i++) {
-    letter += `<span>${litters[i]}</span>`;
+    letter += `<span class="litter">${litters[i]}</span>`;
   }
   return letter;
 }
@@ -43,7 +39,6 @@ function newGame() {
     document.querySelector(".words").innerHTML += formatWord(
       littersHandler(randomWords().split(""))
     );
-    console.log(randomWords());
   }
 }
 
@@ -54,4 +49,19 @@ document.querySelector(".words").addEventListener("click", function (e) {
   //       console.log(e.target);
   //     });
   //   });
+});
+
+let littersCount = 0;
+document.addEventListener("keypress", function (e) {
+  let littersHolder = [];
+  document.querySelectorAll(".litter").forEach((el) => {
+    littersHolder.push(el.textContent);
+  });
+  if (e.key == littersHolder[littersCount]) {
+    console.log(true);
+    littersCount++;
+  } else {
+    console.log(false);
+    littersCount++;
+  }
 });
