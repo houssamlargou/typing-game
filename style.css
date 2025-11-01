@@ -1,3 +1,10 @@
+:root {
+  --true-letter: rgba(0, 255, 30, 0.5);
+  --highlight-true-letter: rgba(21, 255, 0, 0);
+  --false-letter: rgba(255, 4, 0, 0.5);
+  --highlight-false-letter: rgba(255, 4, 0, 0);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -89,23 +96,44 @@ body {
   border: 1rem solid black;
 }
 
-.litter {
-  background-color: rgba(0, 255, 255, 0.347);
-  animation: highlight 1s ease-in infinite;
+.highlight-true {
+  background-color: var(--true-letter);
+  animation: highlight-true 1s ease-in infinite;
   transition: background-color 0.5s;
 }
 
-@keyframes highlight {
+.highlight-false {
+  background-color: var(--false-letter);
+  animation: highlight-false 1s ease-in infinite;
+  transition: background-color 0.5s;
+}
+
+@keyframes highlight-true {
   0% {
-    background-color: rgba(0, 255, 255, 0);
+    background-color: var(--highlight-true-letter);
     transition: all 0.5s;
   }
   50% {
-    background-color: rgba(0, 255, 255, 0.347);
+    background-color: var(--true-letter);
     transition: all 0.5s;
   }
   100% {
-    background-color: rgba(0, 255, 255, 0);
+    background-color: var(--highlight-true-letter);
+    transition: all 0.5s;
+  }
+}
+
+@keyframes highlight-false {
+  0% {
+    background-color: var(--highlight-false-letter);
+    transition: all 0.5s;
+  }
+  50% {
+    background-color: var(--false-letter);
+    transition: all 0.5s;
+  }
+  100% {
+    background-color: var(--highlight-false-letter);
     transition: all 0.5s;
   }
 }

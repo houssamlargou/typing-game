@@ -58,7 +58,7 @@ document.addEventListener("keypress", function (e) {
     littersHolder.push(el);
   });
   if (e.key == littersHolder[littersCount].textContent) {
-    littersHolder[littersCount].style.color = "green";
+    littersHolder[littersCount].classList.add("highlight");
     console.log(true);
     littersCount++;
   } else {
