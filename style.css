@@ -88,3 +88,24 @@ body {
 .btn {
   border: 1rem solid black;
 }
+
+.litter {
+  background-color: rgba(0, 255, 255, 0.347);
+  animation: highlight 1s ease-in infinite;
+  transition: background-color 0.5s;
+}
+
+@keyframes highlight {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+    transition: all 0.5s;
+  }
+  50% {
+    background-color: rgba(0, 255, 255, 0.347);
+    transition: all 0.5s;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+    transition: all 0.5s;
+  }
+}

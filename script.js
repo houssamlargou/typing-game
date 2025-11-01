@@ -55,12 +55,14 @@ let littersCount = 0;
 document.addEventListener("keypress", function (e) {
   let littersHolder = [];
   document.querySelectorAll(".litter").forEach((el) => {
-    littersHolder.push(el.textContent);
+    littersHolder.push(el);
   });
-  if (e.key == littersHolder[littersCount]) {
+  if (e.key == littersHolder[littersCount].textContent) {
+    littersHolder[littersCount].style.color = "green";
     console.log(true);
     littersCount++;
   } else {
+    littersHolder[littersCount].style.color = "red";
     console.log(false);
     littersCount++;
   }
